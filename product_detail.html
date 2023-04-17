@@ -4,7 +4,7 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>AvengerSquad_HardwareNI</title>
-        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
         <link rel="stylesheet" href="~/AvengerSquad_HardwareNI.styles.css" asp-append-version="true" />
         <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/album/">
         <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/carousel/">
@@ -15,6 +15,12 @@
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/site.css">
     </head>
+    <style>
+        .line {
+            margin-bottom: 5px;
+            border-bottom: 1px;
+        }
+    </style>
     <body style="padding-top: 0px;">
         <header>
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -57,7 +63,7 @@
             <main role="main" class="pb-3">
                 
                 <div class="container-fluid text-left">
-                    <div class="row" style="border:1px;">
+                    <div class="row" style="height: auto;">
                         <div class="col-sm-6" style="padding-left: 0px;">
                             <img src="D:\Documents\second sem\imdbsys32\avengers squad\project\images\02.jpg" width="90%" height="80%" alt="02">
                         </div>
@@ -66,9 +72,9 @@
                             <p><i class="fa-solid fa-star" style="color: #ffea00;"></i><i class="fa-solid fa-star" style="color: #ffea00;"></i>
                             <i class="fa-solid fa-star" style="color: #ffea00;"></i><i class="fa-solid fa-star" style="color: #ffea00;"></i>
                             <i class="fa-solid fa-star" style="color: #ffea00;"></i>&nbsp&nbsp20 reviews</p>
-                            <hr class="featurette-divider">
+                            <hr>
                             <h5>₱1000.00</h5>
-                            <hr class="featurette-divider">
+                            <hr>
                             <p>
                                 Commodity name: Industrial grade multifunctional wire cutters
                                 Material: Chrome vanadium alloy steel
@@ -79,10 +85,12 @@
                                 Parameter:<br>
                                 1. 9" Stripping range: 1.0/1.5/2.5/4.0/6.0mm
                             </p>
+                            <p><a href="product_cart.html" class="btn btn-secondary my-5" style="background-color: #F09E00; border: 0px;">
+                                <i class="fa-sharp fa-solid fa-cart-shopping fa-sm" style="color: #FFFFFF;">&nbsp&nbsp</i>Add to Cart</a></a></p>
                         </div>
                     </div>
                 </div>
-                <hr class="featurette-divider">
+                <hr>
                 <div class="container-fluid" style="text-align: center;">
                     <!-- Three columns of text below the carousel -->
                     <div class="row">
@@ -160,9 +168,9 @@
             </div>
         </footer>
 
-        <script src="~/lib/jquery/dist/jquery.min.js"></script>
-        <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-        <script src="~/js/site.js" asp-append-version="true"></script>
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/site.js" asp-append-version="true"></script>
         <script src="https://kit.fontawesome.com/b931b08b2b.js" crossorigin="anonymous"></script>
 
         @await RenderSectionAsync("Scripts", required: false)
