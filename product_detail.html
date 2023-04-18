@@ -37,23 +37,38 @@
                             </li>
                             <li class="nav-item">
 
-                            <a href="product_detail.html" class="nav-link" style="padding-left: 50px;padding-right: 50px;">
+                            <a href="product_cart.html" class="nav-link" style="padding-left: 50px;padding-right: 50px;">
                                 <i class="fa-sharp fa-solid fa-cart-shopping fa-sm" style="color: #000000;">&nbsp&nbsp</i>Cart</a>
                             </li>
                             <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="padding-left: 50px;padding-right: 50px;">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="padding-left: 50px;padding-right: 50px;">
                                     Categories
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <li><a class="dropdown-item" href="#">Products</a></li>
-                                    <li><a class="dropdown-item" href="#">Services</a></li>
+                                    <li><a href="product.html" class="dropdown-item">Products</a></li>
+                                    <li><a href="service.html"class="dropdown-item">Services</a></li>
                                 </ul>
                             </li>
                         </ul>
-                        <form class="d-flex">
-                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit"><i class="fa-sharp fa-solid fa-magnifying-glass fa-sm" style="color: #000000;"></i></button>
-                        </form>
+                    </div>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent" style="float: right;">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <form class="d-flex">
+                                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                                <button class="btn btn-outline-success" type="submit"><i class="fa-sharp fa-solid fa-magnifying-glass fa-sm" style="color: #000000;"></i></button>
+                            </form> 
+                            <li class="nav-item dropdown">
+                                <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="padding-left: 50px;padding-right: 50px;">
+                                    <i class="fa-sharp fa-solid fa-ellipsis-vertical" style="color: #000000;"></i>
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#">Account</a></li>
+                                    <li><a class="dropdown-item" href="#">Setting</a></li>
+                                    <li><a class="dropdown-item" href="#">Logout</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        
                     </div>
                 </div>
             </nav>
@@ -69,9 +84,11 @@
                         </div>
                         <div class="col-sm-6" style="padding-right:130px;">
                             <h5 style="padding-top: 30px; margin: 0px;">Multifunctional Universal Diagonal Pliers Needle Nose Pliers Hardware Tools Universal Wire Cutters Electrician</h5><br>
-                            <p><i class="fa-solid fa-star" style="color: #ffea00;"></i><i class="fa-solid fa-star" style="color: #ffea00;"></i>
-                            <i class="fa-solid fa-star" style="color: #ffea00;"></i><i class="fa-solid fa-star" style="color: #ffea00;"></i>
-                            <i class="fa-solid fa-star" style="color: #ffea00;"></i>&nbsp&nbsp20 reviews</p>
+                            <p>
+                                <i class="fa-solid fa-star" style="color: #ffea00;"></i><i class="fa-solid fa-star" style="color: #ffea00;"></i>
+                                <i class="fa-solid fa-star" style="color: #ffea00;"></i><i class="fa-solid fa-star" style="color: #ffea00;"></i>
+                                <i class="fa-solid fa-star" style="color: #ffea00;"></i>&nbsp&nbsp20 reviews
+                            </p>
                             <hr>
                             <h5>₱1000.00</h5>
                             <hr>
@@ -107,7 +124,7 @@
                                 <i class="fa-solid fa-star" style="color: #ffea00;"></i>
                             </p>
                             <p>₱800.00</p>
-                            <p><a class="btn btn-secondary" asp-area="" asp-page="/ProductDetails">View details &raquo;</a></p>
+                            <p><a class="btn btn-secondary" href="product_detail.html">View details &raquo;</a></p>
                         </div><!-- /.col-lg-4 -->
                         <div class="col-lg-4">
                             <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777" /><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
@@ -119,7 +136,7 @@
                                 <i class="fa-solid fa-star" style="color: #ffea00;"></i>
                             </p>
                             <p>₱700.00</p>
-                            <p><a class="btn btn-secondary" asp-area="" asp-page="/ProductDetails">View details &raquo;</a></p>
+                            <p><a class="btn btn-secondary" href="product_detail.html">View details &raquo;</a></p>
                         </div><!-- /.col-lg-4 -->
                         <div class="col-lg-4">
                             <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777" /><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
@@ -131,8 +148,11 @@
                                 <i class="fa-solid fa-star" style="color: #ffea00;"></i>
                             </p>
                             <p>₱900.00</p>
-                            <p><a class="btn btn-secondary" asp-area="" asp-page="/ProductDetails">View details &raquo;</a></p>
+                            <p><a class="btn btn-secondary" href="product_detail.html">View details &raquo;</a></p>
                         </div><!-- /.col-lg-4 -->
+                        <div>
+                            <p><a href="product.html" class="btn btn-secondary" href="#">See more</a></p>
+                        </div>
                     </div><!-- /.row -->
                 </div>
                 <hr class="featurette-divider">
@@ -167,12 +187,9 @@
                 &copy; 2023 - AvengerSquad_HardwareNI - <a asp-area="" asp-page="/Privacy">Privacy</a>
             </div>
         </footer>
-
         <script src="js/jquery.min.js"></script>
         <script src="js/bootstrap.bundle.min.js"></script>
         <script src="js/site.js" asp-append-version="true"></script>
         <script src="https://kit.fontawesome.com/b931b08b2b.js" crossorigin="anonymous"></script>
-
-        @await RenderSectionAsync("Scripts", required: false)
     </body>
 </html>

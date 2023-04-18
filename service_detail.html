@@ -4,7 +4,7 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>AvengerSquad_HardwareNI</title>
-        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
         <link rel="stylesheet" href="~/AvengerSquad_HardwareNI.styles.css" asp-append-version="true" />
         <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/album/">
         <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/carousel/">
@@ -15,6 +15,12 @@
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/site.css">
     </head>
+    <style>
+        .line {
+            margin-bottom: 5px;
+            border-bottom: 1px;
+        }
+    </style>
     <body style="padding-top: 0px;">
         <header>
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -39,8 +45,8 @@
                                     Categories
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <li><a class="dropdown-item" href="#">Products</a></li>
-                                    <li><a class="dropdown-item" href="#">Services</a></li>
+                                    <li><a class="dropdown-item" href="product.html">Products</a></li>
+                                    <li><a class="dropdown-item" href="service.html">Services</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -57,18 +63,20 @@
             <main role="main" class="pb-3">
                 
                 <div class="container-fluid text-left">
-                    <div class="row" style="border:1px;">
+                    <div class="row" style="height: auto;">
                         <div class="col-sm-6" style="padding-left: 0px;">
                             <img src="D:\Documents\second sem\imdbsys32\avengers squad\project\images\02.jpg" width="90%" height="80%" alt="02">
                         </div>
                         <div class="col-sm-6" style="padding-right:130px;">
                             <h5 style="padding-top: 30px; margin: 0px;">Multifunctional Universal Diagonal Pliers Needle Nose Pliers Hardware Tools Universal Wire Cutters Electrician</h5><br>
-                            <p><i class="fa-solid fa-star" style="color: #ffea00;"></i><i class="fa-solid fa-star" style="color: #ffea00;"></i>
-                            <i class="fa-solid fa-star" style="color: #ffea00;"></i><i class="fa-solid fa-star" style="color: #ffea00;"></i>
-                            <i class="fa-solid fa-star" style="color: #ffea00;"></i>&nbsp&nbsp20 reviews</p>
-                            <hr class="featurette-divider">
+                            <p>
+                                <i class="fa-solid fa-star" style="color: #ffea00;"></i><i class="fa-solid fa-star" style="color: #ffea00;"></i>
+                                <i class="fa-solid fa-star" style="color: #ffea00;"></i><i class="fa-solid fa-star" style="color: #ffea00;"></i>
+                                <i class="fa-solid fa-star" style="color: #ffea00;"></i>&nbsp&nbsp20 reviews
+                            </p>
+                            <hr>
                             <h5>₱1000.00</h5>
-                            <hr class="featurette-divider">
+                            <hr>
                             <p>
                                 Commodity name: Industrial grade multifunctional wire cutters
                                 Material: Chrome vanadium alloy steel
@@ -79,10 +87,12 @@
                                 Parameter:<br>
                                 1. 9" Stripping range: 1.0/1.5/2.5/4.0/6.0mm
                             </p>
+                            <p><a href="service_cart.html" class="btn btn-secondary my-5" style="background-color: #F09E00; border: 0px;">
+                                <i class="fa-sharp fa-solid fa-cart-shopping fa-sm" style="color: #FFFFFF;">&nbsp&nbsp</i>Add to Cart</a></a></p>
                         </div>
                     </div>
                 </div>
-                <hr class="featurette-divider">
+                <hr>
                 <div class="container-fluid" style="text-align: center;">
                     <!-- Three columns of text below the carousel -->
                     <div class="row">
@@ -99,7 +109,7 @@
                                 <i class="fa-solid fa-star" style="color: #ffea00;"></i>
                             </p>
                             <p>₱800.00</p>
-                            <p><a class="btn btn-secondary" asp-area="" asp-page="/ProductDetails">View details &raquo;</a></p>
+                            <p><a class="btn btn-secondary" href="service_detail.html">View details &raquo;</a></p>
                         </div><!-- /.col-lg-4 -->
                         <div class="col-lg-4">
                             <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777" /><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
@@ -111,7 +121,7 @@
                                 <i class="fa-solid fa-star" style="color: #ffea00;"></i>
                             </p>
                             <p>₱700.00</p>
-                            <p><a class="btn btn-secondary" asp-area="" asp-page="/ProductDetails">View details &raquo;</a></p>
+                            <p><a class="btn btn-secondary" href="service_detail.html">View details &raquo;</a></p>
                         </div><!-- /.col-lg-4 -->
                         <div class="col-lg-4">
                             <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777" /><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
@@ -123,8 +133,11 @@
                                 <i class="fa-solid fa-star" style="color: #ffea00;"></i>
                             </p>
                             <p>₱900.00</p>
-                            <p><a class="btn btn-secondary" asp-area="" asp-page="/ProductDetails">View details &raquo;</a></p>
+                            <p><a class="btn btn-secondary" href="service_detail.html">View details &raquo;</a></p>
                         </div><!-- /.col-lg-4 -->
+                        <div>
+                            <p><a href="service.html" class="btn btn-secondary" href="#">See more</a></p>
+                        </div>
                     </div><!-- /.row -->
                 </div>
                 <hr class="featurette-divider">
@@ -159,12 +172,9 @@
                 &copy; 2023 - AvengerSquad_HardwareNI - <a asp-area="" asp-page="/Privacy">Privacy</a>
             </div>
         </footer>
-
-        <script src="~/lib/jquery/dist/jquery.min.js"></script>
+        <script src="js/jquery.min.js"></script>
         <script src="js/bootstrap.bundle.min.js"></script>
         <script src="js/site.js" asp-append-version="true"></script>
         <script src="https://kit.fontawesome.com/b931b08b2b.js" crossorigin="anonymous"></script>
-
-        @await RenderSectionAsync("Scripts", required: false)
     </body>
 </html>
