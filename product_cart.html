@@ -2,59 +2,35 @@
 <html lang="en">
     <head>
         <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <title>AvengerSquad_HardwareNI</title>
-        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-        <link rel="stylesheet" href="~/AvengerSquad_HardwareNI.styles.css" asp-append-version="true" />
+        <!-- Bootstrap core CSS -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/album/">
         <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/carousel/">
         <!-- Custom styles for this template -->
         <link rel="stylesheet" href="css/carousel.css">
-
-        <!-- Bootstrap core CSS -->
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-
         <link rel="stylesheet" href="css/site.css">
 
     </head>
-
     <style>
-        .icon-shape {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            vertical-align: middle;
+        .topnav-left {
+            float: left;
         }
-    
-        .icon-sm {
-            width: 2rem;
-            height: 2rem;
+        .topnav-right {
+            float: right;
         }
-        .rect {
-            background-color: #E2E2E2;
-            opacity: 58%;
-            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.58);
-            border-radius: 10px;
+        .gradient-custom {
+            /* fallback for old browsers */
+            background: #ffffff;
+
+            /* Chrome 10-25, Safari 5.1-6
+            background: -webkit-linear-gradient(to right, rgb(255, 255, 255), rgba(255, 136, 0));
+
+            /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            /* background: linear-gradient(to right, rgb(255, 255, 255), rgba(255, 136, 0)) */ 
         }
-        .bot-pro {
-            background: #FFFFFF;
-            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-            border-radius: 10px;
-            width: 40%;
-            height: 30%;
-        }
-        .bot-ser {
-            background: #F09E00; 
-            color: #ffffff;
-            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-            border-radius: 10px;
-            width: 40%;
-            height: 30%;
-        }
-    
     </style>
-    
     <body style="padding-top: 0px;">
         <header>
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -69,10 +45,14 @@
                             <a href="index.html" class="nav-link active" style="padding-left: 50px;padding-right: 50px;">
                                 <i class="fa-sharp fa-solid fa-house fa-sm" style="color: #000000;">&nbsp&nbsp</i>Home</a>
                             </li>
-                            <li class="nav-item">
-
-                            <a href="product_cart.html" class="nav-link" style="padding-left: 50px;padding-right: 50px;">
-                                <i class="fa-sharp fa-solid fa-cart-shopping fa-sm" style="color: #000000;">&nbsp&nbsp</i>Cart</a>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="padding-left: 50px;padding-right: 50px;">
+                                    <i class="fa-sharp fa-solid fa-cart-shopping" style="color: #000000;">&nbsp&nbsp</i>Cart
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a href="product_cart.html" class="dropdown-item">Products</a></li>
+                                    <li><a href="service_cart.html"class="dropdown-item">Services</a></li>
+                                </ul>
                             </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="padding-left: 50px;padding-right: 50px;">
@@ -103,128 +83,196 @@
                                 </ul>
                             </li>
                         </ul>
-                        
                     </div>
                 </div>
             </nav>
-
         </header>
-        <div class="container-fluid" style="margin: 0px; padding: 0px;">
-            <main role="main" class="pb-3">
-                <div class="container-fluid text-center">
-                    <div class="row my-4">
-                        <div class="col-sm-6">
-                            <p><a href="product_cart.html" class="btn bot-pro">Products &raquo;</a></p>
+        <section class="h-100 gradient-custom">
+            <div class="container py-5">
+                <div class="row d-flex justify-content-center my-4">
+                    <div class="col-md-8">
+                    <div class="card mb-4">
+                        <div class="card-header py-3">
+                        <h5 class="mb-0">Product Cart</h5>
                         </div>
-                        <div class="col-sm-6">
-                            <p><a href="service_cart.html" class="btn bot-ser">Services &raquo;</a></p>
+                        <div class="card-body">
+                        <!-- Single item -->
+                        <div class="row">
+                            <div class="col-lg-3 col-md-12 mb-4 mb-lg-0">
+                            <!-- Image -->
+                            <div class="bg-image hover-overlay hover-zoom ripple rounded" data-mdb-ripple-color="light">
+                                <img src="https://ae01.alicdn.com/kf/HTB1CneYKVXXXXczXpXXq6xXFXXXz/Heavy-saving-40-Diagonal-pliers-diagonal-pliers-diagonal-cutting-pliers-Household.jpg"
+                                class="w-100" alt="Diagonal Pliers" />
+                                <a href="#!">
+                                <div class="mask" style="background-color: rgba(251, 251, 251, 0.2)"></div>
+                                </a>
+                            </div>
+                            <!-- Image -->
+                            </div>
+            
+                            <div class="col-lg-5 col-md-6 mb-4 mb-lg-0">
+                            <!-- Data -->
+                            <p><strong>Diagonal Pliers</strong></p>
+                            <p>Color: Green</p>
+                            <p>Size: None</p>
+                            <p>Price:   <strong>₱ 17.99</strong></p>
+                            <button type="button" class="btn btn-primary btn-sm me-1 mb-2" data-mdb-toggle="tooltip"
+                                title="Remove item">
+                                <i class="fa-sharp fa-solid fa-trash" style="color: #ffffff;"></i>
+                            </button>
+                            <button type="button" class="btn btn-danger btn-sm mb-2" data-mdb-toggle="tooltip"
+                                title="Move to the wish list">
+                                <i class="fas fa-heart"></i>
+                            </button>
+                            <!-- Data -->
+                            </div>
+            
+                            <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+                            <!-- Quantity -->
+                            <div class="d-flex mb-4" style="max-width: 300px">
+                                <button class="btn btn-primary px-3 me-2"
+                                    onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
+                                    <i class="fas fa-minus"></i>
+                                </button>
+            
+                                <div class="form-outline">
+                                    <input id="form1" min="0" name="quantity" value="1" type="number" class="form-control text-start text-md-center" />
+                                </div>
+            
+                                <button class="btn btn-primary px-3 ms-2"
+                                onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
+                                <i class="fas fa-plus"></i>
+                                </button>
+                            </div>
+                            <!-- Quantity -->
+            
+                            
+                            </div>
+                        </div>
+                        <!-- Single item -->
+            
+                        <hr class="my-4" />
+            
+                        <!-- Single item -->
+                        <div class="row">
+                            <div class="col-lg-3 col-md-12 mb-4 mb-lg-0">
+                            <!-- Image -->
+                            <div class="bg-image hover-overlay hover-zoom ripple rounded" data-mdb-ripple-color="light">
+                                <img src="https://cf.shopee.ph/file/d398f8849f21e519c2741e2a362c5ad4"
+                                class="w-100" />
+                                <a href="#!">
+                                <div class="mask" style="background-color: rgba(251, 251, 251, 0.2)"></div>
+                                </a>
+                            </div>
+                            <!-- Image -->
+                            </div>
+            
+                            <div class="col-lg-5 col-md-6 mb-4 mb-lg-0">
+                            <!-- Data -->
+                            <p><strong>Bicycle Set kit</strong></p>
+                            <p>Color: Black</p>
+                            <p>Size: None</p>
+                            <p>Price: <strong>₱ 17.99</strong></p>
+                            <button type="button" class="btn btn-primary btn-sm me-1 mb-2" data-mdb-toggle="tooltip"
+                                title="Remove item">
+                                <i class="fas fa-trash"></i>
+                            </button>
+                            <button type="button" class="btn btn-danger btn-sm mb-2" data-mdb-toggle="tooltip"
+                                title="Move to the wish list">
+                                <i class="fas fa-heart"></i>
+                            </button>
+                            <!-- Data -->
+                            </div>
+            
+                            <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+                            <!-- Quantity -->
+                            <div class="d-flex mb-4" style="max-width: 300px">
+                                <button class="btn btn-primary px-3 me-2"
+                                    onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
+                                    <i class="fas fa-minus"></i>
+                                </button>
+            
+                                <div class="form-outline">
+                                    <input id="form1" min="0" name="quantity" value="1" type="number" class="form-control text-start text-md-center" />
+                                    
+                                </div>
+            
+                                <button class="btn btn-primary px-3 ms-2"
+                                    onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
+                                    <i class="fas fa-plus"></i>
+                                </button>
+                            </div>
+                            <!-- Quantity -->
+        
+                            </div>
+                        </div>
+                        <!-- Single item -->
+                        </div>
+                    </div>
+                    <div class="card mb-4">
+                        <div class="card-body">
+                        <p><strong>Expected shipping delivery</strong></p>
+                        <p class="mb-0">12.10.2020 - 14.10.2020</p>
+                        </div>
+                    </div>
+                    <div class="card mb-4 mb-lg-0">
+                        <div class="card-body">
+                        <p><strong>We accept</strong></p>
+                        <img class="me-2" width="45px"
+                            src="https://mdbcdn.b-cdn.net/wp-content/plugins/woocommerce-gateway-stripe/assets/images/visa.svg"
+                            alt="Visa" />
+                        <img class="me-2" width="45px"
+                            src="https://mdbcdn.b-cdn.net/wp-content/plugins/woocommerce-gateway-stripe/assets/images/amex.svg"
+                            alt="American Express" />
+                        <img class="me-2" width="45px"
+                            src="https://mdbcdn.b-cdn.net/wp-content/plugins/woocommerce-gateway-stripe/assets/images/mastercard.svg"
+                            alt="Mastercard" />
+                        <img class="me-2" width="45px"
+                            src="https://mdbcdn.b-cdn.net/wp-content/plugins/woocommerce/includes/gateways/paypal/assets/images/paypal.png"
+                            alt="PayPal acceptance mark" />
+                        </div>
+                    </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card mb-4">
+                            <div class="card-header py-3">
+                                <h5 class="mb-0">Summary</h5>
+                                </div>
+                                <div class="card-body">
+                                <ul class="list-group list-group-flush">
+                                    <li
+                                    class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 pb-0">
+                                    Products
+                                    <span>$53.98</span>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center px-0">
+                                    Shipping
+                                    <span>Gratis</span>
+                                    </li>
+                                    <li
+                                    class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 mb-3">
+                                    <div>
+                                        <strong>Total amount</strong>
+                                        <strong>
+                                            <p class="mb-0">(including VAT)</p>
+                                        </strong>
+                                    </div>
+                                    <span><strong>$53.98</strong></span>
+                                    </li>
+                                </ul>
+                    
+                                <button type="button" class="btn btn-primary btn-lg btn-block">
+                                    Go to checkout
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="container rect">
-                    <div class="row align-items-center p-3">
-                        <div class="col-sm-3">
-                            <div class="form-check">
-                                <input class="form-check-input me-5 my-5 center" type="checkbox" value="" id="flexCheckDefault"/>
-                                <label class="form-check-label" for="flexCheckDefault">
-                                    <svg class="bd-placeholder-img square" width="120" height="120" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777" /><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
-                                </label>
-                            </div>
-                        </div>
-                        <div class="col-sm-7">
-                            <p>Multifunctional Universe Diagonal Pliers Needle Nose Pliers Hardware Tools Universal Wire Cutters Electrician</p><br>
-                            <p>₱800.00</p>
-                        </div>
-                        <div class="col-sm-2">
-                            <div class="input-group w-auto justify-content-end align-items-center">
-                                <input type="button" value="-" class="button-minus border rounded-circle  icon-shape icon-sm mx-1 " data-field="quantity">
-                                <input type="number" step="1" max="10" value="1" name="quantity" class="quantity-field border-0 text-center w-25">
-                                <input type="button" value="+" class="button-plus border rounded-circle icon-shape icon-sm lh-0" data-field="quantity">
-                            </div>
-                        </div>
-                    </div>
-                </div><br>
-                <div class="container rect">
-                    <div class="row align-items-center p-3">
-                        <div class="col-sm-3">
-                            <div class="form-check">
-                                <input class="form-check-input me-5 my-5 center" type="checkbox" value="" id="flexCheckDefault"/>
-                                <label class="form-check-label" for="flexCheckDefault">
-                                    <svg class="bd-placeholder-img square" width="120" height="120" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777" /><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
-                                </label>
-                            </div>
-                        </div>
-                        <div class="col-sm-7">
-                            <p>Hammer</p><br>
-                            <p>₱350.00</p>
-                        </div>
-                        <div class="col-sm-2">
-                            <div class="input-group w-auto justify-content-end align-items-center">
-                                <input type="button" value="-" class="button-minus border rounded-circle  icon-shape icon-sm mx-1 " data-field="quantity">
-                                <input type="number" step="1" max="10" value="1" name="quantity" class="quantity-field border-0 text-center w-25">
-                                <input type="button" value="+" class="button-plus border rounded-circle icon-shape icon-sm lh-0" data-field="quantity">
-                            </div>
-                        </div>
-                    </div>
-                </div><br>
-                <div class="container rect">
-                    <div class="row align-items-center p-3">
-                        <div class="col-sm-3">
-                            <div class="form-check">
-                                <input class="form-check-input me-5 my-5 center" type="checkbox" value="" id="flexCheckDefault"/>
-                                <label class="form-check-label" for="flexCheckDefault">
-                                    <svg class="bd-placeholder-img square" width="120" height="120" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777" /><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
-                                </label>
-                            </div>
-                        </div>
-                        <div class="col-sm-7">
-                            <p>Multifunctional Universe Diagonal Pliers Needle Nose Pliers Hardware Tools Universal Wire Cutters Electrician</p><br>
-                            <p>₱800.00</p>
-                        </div>
-                        <div class="col-sm-2">
-                            <div class="input-group w-auto justify-content-end align-items-center">
-                                <input type="button" value="-" class="button-minus border rounded-circle  icon-shape icon-sm mx-1 " data-field="quantity">
-                                <input type="number" step="1" max="10" value="1" name="quantity" class="quantity-field border-0 text-center w-25">
-                                <input type="button" value="+" class="button-plus border rounded-circle icon-shape icon-sm lh-0" data-field="quantity">
-                            </div>
-                        </div>
-                    </div>
-                </div><br>
-                <div class="container rect">
-                    <div class="row align-items-center p-3">
-                        <div class="col-sm-3">
-                            <div class="form-check">
-                                <input class="form-check-input me-5 my-5 center" type="checkbox" value="" id="flexCheckDefault"/>
-                                <label class="form-check-label" for="flexCheckDefault">
-                                    <svg class="bd-placeholder-img square" width="120" height="120" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777" /><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
-                                </label>
-                            </div>
-                        </div>
-                        <div class="col-sm-7">
-                            <p>Multifunctional Universe Diagonal Pliers Needle Nose Pliers Hardware Tools Universal Wire Cutters Electrician</p><br>
-                            <p>₱800.00</p>
-                        </div>
-                        <div class="col-sm-2">
-                            <div class="input-group w-auto justify-content-end align-items-center">
-                                <input type="button" value="-" class="button-minus border rounded-circle  icon-shape icon-sm mx-1 " data-field="quantity">
-                                <input type="number" step="1" max="10" value="1" name="quantity" class="quantity-field border-0 text-center w-25">
-                                <input type="button" value="+" class="button-plus border rounded-circle icon-shape icon-sm lh-0" data-field="quantity">
-                            </div>
-                        </div>
-                    </div>
-                </div><br>
-                
-            </main>
-        </div>
-
-        <footer class="border-top footer text-muted">
-            <div class="container">
-            <a href="index.html"><p>&copy; 2023 - AvengerSquad_HardwareNI</p></a>
             </div>
-        </footer>
-        <script src="~/lib/jquery/dist/jquery.min.js"></script>
-        <script src="js/bootstrap.bundle.min.js"></script>
-        <script src="js/site.js" asp-append-version="true"></script>
-        <script src="https://kit.fontawesome.com/b931b08b2b.js" crossorigin="anonymous"></script>
+        </section>
     </body>
+    <script src="https://kit.fontawesome.com/b931b08b2b.js" crossorigin="anonymous"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/site.js" asp-append-version="true"></script>
 </html>

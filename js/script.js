@@ -109,4 +109,15 @@
     var selectedFile = this.files[0];
     document.getElementById("message-to-send").value = selectedFile.name;
   });
+
+  //JS FOR PRODUCT REVIEW/ SERVICE REVIEW
+let stars = document.querySelectorAll(".ratings span")
+let products = document.querySelectorAll(".ratings")
+let ratings = [];
+
+for(let star of stars){
+    star.addEventListener("click",function(){
+        this.setAttribute("data-clicked","true");
+    });
+}
   
